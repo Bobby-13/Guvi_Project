@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>register</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<div class="form-container">
+
+   <form id="register-form" onsubmit="Validate(event)">
+      <h3>register now</h3>
+      <div style="color: green;" id="status"></div>
+      <input type="text" name="name" placeholder="enter username" class="box" id="name" required>
+      <input type="email" name="email" placeholder="enter email" class="box" id="email"required>
+      <input type="password" name="password" placeholder="enter password" class="box" id="password" required>
+      <input type="password" name="cpassword" placeholder="confirm password" class="box" id="cpassword" required>
+      <input type="submit" id="register-btn" class="btn" >
+      <p>already have an account? <a href="login.html" >login now</a></p>
+   </form>
+
+</div>
+<script src="js/register.js"></script>
+</body>
+</html>

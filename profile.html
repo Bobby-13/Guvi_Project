@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>update profile</title>
+   <link rel="stylesheet" href="css/style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+</head>
+<body>
+   
+<div class="update-profile">
+   <form id ="profile_form" method="post" onsubmit="profile(event)">
+    <img style="border-radius: 50%;" src="assests/img2.webp">
+    <h3 id="mailid"></h3>
+      <div class="flex">
+         <div class="inputBox">
+            <span>username :</span>
+            <input type="text" name="update_name" id="username" class="box" disabled>
+            <span>Date Of Birth :</span>
+            <input type="text" name="update_dob" id="dob" class="box" diasbled>
+            <span>Age :</span>
+            <input type="text" name="update_age" id="age" class="box" disabled>
+         </div>
+         <div class="inputBox">
+            <span>Bio :</span>
+            <textarea rows="3" cols="45" id="bio" disabled>
+               </textarea>
+            <span>Address :</span>
+            <input type="text" name="address" id="address" class="box" disabled>
+            <span>Phone No :</span>
+            <input type="text" name="phno" id="phno" class="box" disabled>
+            
+         </div>
+      </div>
+      <button type="submit" value="update_profile" id ="update_profile" name="update_profile" class="btn">Update Profile</button>
+      <button type="submit" value="save_profile" id ="save_profile" name="save_profile" class="button button1" id="bt" style="display: none">Save Changes</button>
+   </form>
+
+</div>
+<script src="js/profile.js"></script>
+</body>
+</html>
